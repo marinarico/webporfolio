@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+*{ box-sizing:border-box;}
+
+/* TRANSICIONES IMAGENES */
+
+#cf img {
+    transition: opacity 1s ease-in-out;
+  }
+  
+#cf img.top:hover {
+    opacity:0;
+  }
+
+/* CENTRAR */
+
+  .caja { 
+    width: 200px;
+    margin: 0 auto; }
+
+/* CENTRAR redes sociales */
+
+#padre{
+  display:grid;
+  grid-template-areas:'instagram behance twitter';
+  grid-template-columns: 33% 33% 33%;
+  padding: center;
+}
+
+#instagram{
+  grid-area:instagram;
+}
+
+#behance{
+  grid-area:behance;
+}
+
+#twitter{
+  grid-area:twitter;
+}
+
+/* GALERIA*/
+
+.medidagaleria{
+    width: 30%; 
+  
+}
+.medidaredessociales{
+  width: 50px;
+}
